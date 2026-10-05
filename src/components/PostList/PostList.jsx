@@ -4,9 +4,7 @@ export const PostList = ({ posts }) => {
   return (
     <div className="PostList">
       {posts.map(post => (
-        <div key={post.id} className="PostInfo">
-          <PostInfo post={post} />
-        </div>
+        <PostInfo key={post.id} post={post} />
       ))}
     </div>
   );
